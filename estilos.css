@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .left-panel {
+    width: 50%;
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .left-panel h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .left-panel p {
+    font-size: 1.1rem;
+    max-width: 500px;
+  }
+  
+  .login-box {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+    margin-right: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .subtitulo {
+    text-align: center;
+    margin-bottom: 20px;
+    color: gray;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-group input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .botones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .botones button {
+    padding: 10px 30px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .botones button:hover {
+    background-color: #2980b9;
+  }
+  
+  .iconos {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .recomendaciones {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }

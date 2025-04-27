@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Pedregal de Yumbo</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="left-panel">
+    <h1>Bienvenido RELOAD <br> Pedregal de Yumbo</h1>
+    <p>Para nosotros es un gusto tenerte presente, recuerda que el uso del software solo es para uso del personal autorizado.</p>
+  </div>
+
+  <div class="login-box">
+    <h2>INGRESA CON TU USUARIO</h2>
+    <p class="subtitulo">Ingresa tus datos</p>
+
+    <form action="/login" method="POST">
+      <div class="input-group">
+        <label for="usuario">Nombre Usuario:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+      </div>
+
+      <div class="input-group">
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" name="clave" placeholder="Ingresa tu contraseña" required>
+      </div>
+
+      <div class="botones">
+        <button type="submit">INGRESAR</button>
+        <button type="button" onclick="cancelar()">CANCELAR</button>
+        <button type="button" onclick="olvido_clave()">OLVIDÓ CLAVE</button>
+      </div>
+
+      <div class="iconos">
+        <span>✖️</span>
+        <span>📷</span>
+        <span>👤</span>
+      </div>
+
+      <div class="recomendaciones">
+        <label>Recomendaciones de Privacidad</label>
+        <input type="checkbox" id="confirmar"> Confirmo que la información esté bien
+      </div>
+
+      <div class="recuperar-clave">
+        <p>Si olvidaste tu clave, contacta al administrador del sistema para recuperarla.</p>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+      function cancelar() {
+        document.getElementById('usuario').value = '';
+        document.getElementById('clave').value = '';
+      }
+
+      function olvido_clave() {
+        alert('Si olvidaste tu clave, contacta al administrador del sistema para recuperarla.');
+      } 
+  </script>
+</body>
+</html>
